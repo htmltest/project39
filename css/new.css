@@ -1,14 +1,17 @@
 .new-sections-wrap {text-align:center; padding:15px 0 0 0}
-.new-sections {display:inline-block; vertical-align:top}
-.new-sections-item {float:left; position:relative; cursor:pointer}
-.new-sections-item-header {color:#434f62; font-size:14px; text-align:center; position:relative; z-index:2}
-.new-sections-item-header sub {display:block; position:absolute; right:0; top:0; width:1px; height:100%; background:#c2c5c8}
-.new-sections-item-header sup {display:block; position:absolute; left:0; top:0; width:1px; height:100%; background:#c2c5c8}
+.new-sections {display:table; margin:0 auto}
+.new-sections-headers {display:table-row}
+.new-sections-item-header {display:table-cell; height:70px; vertical-align:top; color:#434f62; font-size:14px; text-align:center; border-right:1px solid #c2c5c8}
+.new-sections-item-header:first-child {border-left:1px solid #c2c5c8}
 .new-sections-item-header div {color:#434f62; font-family:"v33r"; font-size:20px}
-.new-sections-item-photo {line-height:0; position:relative}
+.new-sections-photos {display:table-row}
+.new-sections-item {float:none; display:table-cell; vertical-align:bottom; cursor:pointer; border-right:1px solid #c2c5c8}
+.new-sections-item:first-child {border-left:1px solid #c2c5c8}
+.new-sections-item-photo {line-height:0; position:relative; margin:0 -1px 0 0}
+.new-sections-item:first-child .new-sections-item-photo {margin:0 -1px}
 .new-sections-item-photo-shadow {display:none; position:absolute; left:0; top:0; width:100%; height:100%; background:url(../images/zero.png)}
-.new-sections:hover .new-sections-item-photo-shadow {display:block}
-.new-sections:hover .new-sections-item:hover .new-sections-item-photo-shadow {display:none}
+.new-sections-photos:hover .new-sections-item-photo-shadow {display:block}
+.new-sections-photos:hover .new-sections-item:hover .new-sections-item-photo-shadow {display:none}
 .new-sections-item-detail {cursor:default; z-index:3; padding:20px; white-space:nowrap; position:absolute; top:50%; left:-99999px; margin-left:-10px; background:#00a1e4; border-radius:20px; box-shadow:0 5px 5px rgba(0, 0, 0, .3)}
 .new-sections-item.right .new-sections-item-detail {left:auto; margin-left:0; right:99999px; margin-right:-10px}
 .new-sections-item:hover .new-sections-item-detail {left:100%}
