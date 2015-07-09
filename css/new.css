@@ -13,11 +13,14 @@
 .new-sections-photos:hover .new-sections-item-photo-shadow {display:block}
 .new-sections-photos:hover .new-sections-item:hover .new-sections-item-photo-shadow {display:none}
 .new-sections-item-detail {cursor:default; z-index:3; padding:20px; white-space:nowrap; position:absolute; top:50%; left:-99999px; margin-left:-10px; background:#00a1e4; border-radius:20px; box-shadow:0 5px 5px rgba(0, 0, 0, .3)}
+.new-sections-red .new-sections-item-detail {background:#ff6c00}
 .new-sections-item.right .new-sections-item-detail {left:auto; margin-left:0; right:99999px; margin-right:-10px}
 .new-sections-item:hover .new-sections-item-detail {left:100%}
 .new-sections-item.right:hover .new-sections-item-detail {left:auto; right:100%}
 .new-sections-item-detail:before {content:""; display:block; width:18px; height:42px; background:url(../images/popup_str2.png); left:-18px; top:50%; margin-top:-18px; position:absolute}
 .new-sections-item.right .new-sections-item-detail:before {background:url(../images/popup_str4.png); left:auto; right:-18px}
+.new-sections-red .new-sections-item-detail:before {background:url(../images/popup_str2_red.png)}
+.new-sections-red .new-sections-item.right .new-sections-item-detail:before {background:url(../images/popup_str4_red.png)}
 .new-sections-item-detail td+td {padding-left:17px}
 .new-sections-item-detail td+td+td {padding-left:10px}
 .new-sections-item-detail td div {color:#fff; font-size:17px; line-height:29px}
