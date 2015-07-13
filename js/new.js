@@ -9,6 +9,28 @@
             }
         });
 
+        $('.new-sections-tabs-menu a').eq(0).click(function(e) {
+            $('.new-sections').removeClass('backside');
+
+            $('.new-sections-tabs-menu a').removeClass('active');
+            $(this).addClass('active');
+
+            $('.new-sections-item').toggleClass('right');
+
+            e.preventDefault();
+        });
+
+        $('.new-sections-tabs-menu a').eq(1).click(function(e) {
+            $('.new-sections').addClass('backside');
+
+            $('.new-sections-tabs-menu a').removeClass('active');
+            $(this).addClass('active');
+
+            $('.new-sections-item').toggleClass('right');
+
+            e.preventDefault();
+        });
+
     });
 
     $(window).load(function() {
